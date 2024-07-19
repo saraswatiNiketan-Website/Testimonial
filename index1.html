@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index1.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet" />
+<style>
+    .text-testimonials{
+        text-decoration: none;
+        text-align: center;
+        border: none;   
+        font-size:35px;
+        font-weight: 600;
+        padding: 30px;
+    }
+    .btn{
+        text-decoration: none;
+        text-align: center;
+        /* background-color: rgb(200, 223, 243); */
+        border-color: white;
+        box-shadow: none;
+        row-gap: 10px;
+        font-size: larger;
+        transition: transform ease 0.3s 0s ;
+        cursor: pointer;
+        position: relative;
+    }
+    .btn::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        height: 4px;
+        width: 100%;
+        left: 0;
+        background-color: rgb(16, 5, 226);
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+        transform: scaleX(0);
+    }
+    .btn:hover::after{
+        transform: scaleX(1);
+    }
+    .btn:hover{
+        transform: translateY(-10px);
+        background-color:whitesmoke;
+    }
+    
+
+</style>
+</head>
+<body>
+    <section class="container">
+        
+    <div class="testimonial mySwiper">
+       
+        <div class="text-testimonials">
+            <button class="btn" href="Intestimonial.html">Testimonials</button>
+        </div>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide">
+                    <image src="rabina.jpg" alt=" " class="image">
+                         <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam qui ipsa obcaecati culpa laborum eligendi provident nobis excepturi! Possimus ipsam saepe atque placeat nobis reprehenderit est tenetur dicta enim voluptatibus.
+                         </p>
+                    <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <div class="details">
+                       <span class="name">Rabina Maharjan</span>
+                       <span class="job">(Principle)</span>
+                     </div>
+                </div>
+             </div>
+        </div>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide">
+                    <image src="machakaji.jpg" alt=" " class="image">
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nam qui ipsa obcaecati culpa laborum eligendi provident nobis excepturi! Possimus ipsam saepe atque placeat nobis reprehenderit est tenetur dicta enim voluptatibus.
+                    </p>
+                    <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <div class="details">
+                        <span class="name">Machakaji Maharjan</span>
+                        <span class="job">(Math Teacher)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide">
+                    <image src="mallika.jpg" alt=" " class="image">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam qui ipsa obcaecati culpa laborum eligendi provident nobis excepturi! Possimus ipsam saepe atque placeat nobis reprehenderit est tenetur dicta enim voluptatibus.
+                    </p>
+                     <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <div class="details">
+                          <span class="name">Mallika Joshi</span>
+                          <span class="job">(English Teacher)</span>
+                    </div>
+                </div>
+            </div>
+         </div>
+      
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="script.js"></script>
+</body>
+</html>
